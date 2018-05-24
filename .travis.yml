@@ -25,5 +25,7 @@ install:
   # Build and activate our environment
   - conda env create -f environment.lock.yml
   - source activate travis-tf-test-env
+  # Debug what got installed
+  - conda env export
 
 script: python test.py
