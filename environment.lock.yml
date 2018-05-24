@@ -1,0 +1,8 @@
+name: travis-tf-test-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy=1.14.2=py36_blas_openblas_200
+  - pip:
+    - "https://anaconda.org/intel/tensorflow/1.6.0/download/tensorflow-1.6.0-cp36-cp36m-linux_x86_64.whl"
